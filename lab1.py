@@ -14,3 +14,8 @@ Alvin_jackass = 2
 numerador = pepito_sherk * Ramona_sherk
 denominador = (pepito_sherk**2)**0.5 * (Ramona_sherk**2)**0.5
 similitud1 = numerador / denominador
+
+# !Paso 2: Calcular la similitud entre pepito (U) y Alvin (V)
+numerador = pepito_sherk * Alvin_sherk
+denominador = (pepito_sherk**2)**0.5 * (Alvin_sherk**2)**0.5
+similitud2 = numerador / denominador
