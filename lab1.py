@@ -24,3 +24,8 @@ similitud2 = numerador / denominador
 numerador = ((similitud1 * pepito_jackass) + (similitud2 * Alvin_jackass))
 denominador = (similitud1 + similitud2)
 prediccion = numerador / denominador
+
+# !Resultados
+print("Similitud Pepito-Ramona: ", round(similitud1, 2))
+print("Similitud Pepito-Alvin: ", round(similitud2, 2))
+print("Prediccion de Ramona para jackass: ", round(prediccion, 2))
