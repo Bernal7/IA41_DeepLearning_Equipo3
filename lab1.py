@@ -1,10 +1,7 @@
-#calificaciones
-luis_matrix = 4
-luis_frozen = 2
+# calificaciones conocidas
+pepito_sherk = 5
+pepito_jackass = 5
 
-#calificaciones ana
-ana_matrix = 5
-ana_frozen = None
-
-#Paso #1 calcular similitud entre ana y luis
-numerador = ana_matrix * luis_matrix
+# Ramona calificaciones
+Ramona_sherk = 1
+Ramona_jackass = None
