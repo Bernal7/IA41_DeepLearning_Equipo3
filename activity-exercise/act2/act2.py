@@ -33,3 +33,6 @@ print("Similitud usuario2 - usuario3:", similitud("usuario2", "usuario3")) #SIM 
 print("\nPredicciones:")
 print("usuario1 en Pokemon:", predecir("usuario1", "Pokemon")) #PRED ESPERADA DE 4.03
 print("usuario2 en Interstellar:", predecir("usuario2", "Interestellar")) #PRED ESPERADA DE 4.25
+
+
+#tamal tamal
