@@ -64,3 +64,39 @@ denominador = math.sqrt((math.pow(usuario1_pokemon, 2) + math.pow(usuario1_narut
 sim3 = numerador / denominador
 
 # TODO Calcular Similitud #3 para usuario 1 y usuario 4
+
+
+
+# TODO Calcular Similitud #4 para usuario 2 y usuario 3
+
+numerador = usuario2_demon * usuario3_demon
+
+denominador = math.sqrt(math.pow(usuario2_demon, 2) * math.pow(usuario3_demon, 2))
+
+sim4 = numerador / denominador
+
+# TODO Calcular Similitud #4 para usuario 2 y usuario 3
+
+
+
+# TODO Calcular Similitud #5 para usuario 2 y usuario 4
+
+numerador = (usuario2_pokemon * usuario4_pokemon) + (usuario2_demon * usuario4_demon)
+
+denominador = math.sqrt((math.pow(usuario2_pokemon, 2) + math.pow(usuario2_demon, 2)) * (math.pow(usuario4_pokemon, 2) + math.pow(usuario4_demon, 2)))
+
+sim5 = numerador / denominador
+
+# TODO Calcular Similitud #5 para usuario 2 y usuario 4
+
+
+
+# TODO Calcular Similitud #6 para usuario 3 y usuario 4
+
+numerador = (usuario3_naruto * usuario4_naruto) + (usuario3_demon * usuario4_demon)
+
+denominador = math.sqrt((math.pow(usuario3_naruto, 2) + math.pow(usuario3_demon, 2)) * (math.pow(usuario4_naruto, 2) + math.pow(usuario4_demon, 2)))
+
+sim6 = numerador / denominador
+
+# TODO Calcular Similitud #6 para usuario 3 y usuario 4
