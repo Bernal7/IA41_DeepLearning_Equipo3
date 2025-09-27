@@ -100,3 +100,37 @@ denominador = math.sqrt((math.pow(usuario3_naruto, 2) + math.pow(usuario3_demon,
 sim6 = numerador / denominador
 
 # TODO Calcular Similitud #6 para usuario 3 y usuario 4
+
+
+
+
+
+# ! Calcular Prediccion para Usuario 1 Demon Slayer
+
+numerador = (sim1 * usuario2_demon) + (sim2 * usuario3_demon) + (sim3 * usuario4_demon)
+
+denominador = sim1 + sim2 + sim3
+
+pred1 = numerador / denominador
+
+# ! Calcular Prediccion para Usuario 1 Demon Slayer
+
+
+
+# ! Calcular Prediccion para Usuario 2 Naruto
+
+numerador = (sim1 * usuario1_naruto) + (sim4 * usuario3_naruto) + (sim5 * usuario4_naruto)
+denominador = sim1 + sim4 + sim5
+pred2 = numerador / denominador
+
+# ! Calcular Prediccion para Usuario 2 Naruto
+
+
+
+# ! Calcular Prediccion para Usuario 3 Pokemon
+
+numerador = (sim2 * usuario1_pokemon) + (sim4 * usuario2_pokemon) + (sim6 * usuario4_pokemon)
+denominador = sim2 + sim4 + sim6
+pred3 = numerador / denominador
+
+# ! Calcular Prediccion para Usuario 3 Pokemon
