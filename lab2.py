@@ -134,19 +134,24 @@ denominador = sim2 + sim4 + sim6
 pred3 = numerador / denominador
 
 # ! Calcular Prediccion para Usuario 3 Pokemon
+
+
+
+
+
 # * Imprimir Resultados de el Calculo de Similitudes y Calculo de  Predicciones 
 
-print("Similitud #1 entre: usuario #1 vs usuario #2 = ", sim1) # ? Impresion de Resultado de la Primera Similitud
-print("Similitud #2 entre: usuario #1 vs usuario #3 = ", sim2) # ? Impresion de Resultado de la Segunda Similitud
-print("Similitud #3 entre: usuario #1 vs usuario #4 = ", sim3) # ? Impresion de Resultado de la Tercera Similitud
-print("Similitud #4 entre: usuario #2 vs usuario #3 = ", sim4) # ? Impresion de Resultado de la Cuarta Similitud
-print("Similitud #5 entre: usuario #2 vs usuario #4 = ", sim5) # ? Impresion de Resultado de la Quinta Similitud
-print("Similitud #6 entre: usuario #3 vs usuario #4 = ", sim6) # ? Impresion de Resultado de la Sexta Similitud
+print("Similitud #1 entre: usuario #1 vs usuario #2 = ", round(sim1, 2)) # ? Impresion de Resultado de la Primera Similitud
+print("Similitud #2 entre: usuario #1 vs usuario #3 = ", round(sim2, 2)) # ? Impresion de Resultado de la Segunda Similitud
+print("Similitud #3 entre: usuario #1 vs usuario #4 = ", round(sim3, 2)) # ? Impresion de Resultado de la Tercera Similitud
+print("Similitud #4 entre: usuario #2 vs usuario #3 = ", round(sim4, 2)) # ? Impresion de Resultado de la Cuarta Similitud
+print("Similitud #5 entre: usuario #2 vs usuario #4 = ", round(sim5, 2)) # ? Impresion de Resultado de la Quinta Similitud
+print("Similitud #6 entre: usuario #3 vs usuario #4 = ", round(sim6, 2)) # ? Impresion de Resultado de la Sexta Similitud
 
 print()
 
-print("Prediccion para: Usuario #1 - Demon Slayer = ", pred1) # ? Impresion del Resultado de la Primera Prediccion
-print("Prediccion para: Usuario #2 - Naruto = ", pred2) # ? Impresion del Resultado de la Segunda Prediccion
-print("Prediccion para: Usuario #3 - Pokemon = ", pred3) # ? Impresion del Resultado de la Tercera Prediccion
+print("Prediccion para: Usuario #1 - Demon Slayer = ", round(pred1, 2)) # ? Impresion del Resultado de la Primera Prediccion
+print("Prediccion para: Usuario #2 - Naruto = ", round(pred2, 2)) # ? Impresion del Resultado de la Segunda Prediccion
+print("Prediccion para: Usuario #3 - Pokemon = ", round(pred3, 2)) # ? Impresion del Resultado de la Tercera Prediccion
 
 # * Imprimir Resultados de el Calculo de Similitudes y Calculo de  Predicciones
