@@ -20,3 +20,9 @@ def step(x):
         return 1
     else:
         return 0
+
+print("Simulacion de una sola neurona (NAND Logico):\n")
+for x in entradas:
+    x1, x2 = x
+    #Calculo de neuronas
+    z = x1*w1 + x2*w2 + b
