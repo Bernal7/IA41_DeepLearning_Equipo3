@@ -25,3 +25,5 @@ for x in entradas:
     x1, x2 = x
     #Calculo de neuronas
     z = x1*w1 + x2*w2 + b
+    salida = step(z)
+    print(f"Entrada: {x} -> z={z:.1f}, salida={salida}")
