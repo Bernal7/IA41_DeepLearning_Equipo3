@@ -28,7 +28,4 @@ for x in entradas:
     salida = step(z)
     print(f"Entrada: {x} -> z={z:.1f}, salida={salida}")
 
-salida = step(z)
-    print(f"Entrada: {x} -> z={z:.1f}, salida={salida}")
-
 #DIAGRAMA DE FLUJO DE LA NEURONA IMPLEMENTADA EN DRAW.IO
