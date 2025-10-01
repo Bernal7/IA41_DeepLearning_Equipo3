@@ -10,12 +10,12 @@
 entradas = [[0,0], [0,1], [1,0], [1,1]]
 
 #Pesos y bias (ajustados para NAND)
-w1, w2, b = -1, -1, 1.5
+w1, w2, b = 1, 1, -1.5
 
 #Funcion de activacion
 def step(x):
     """Funcion de activacion de escalon"""
-    if x>=0:
+    if x<=0:
         return 1
     else:
         return 0
@@ -24,7 +24,7 @@ print("Simulacion de una sola neurona (NAND Logico):\n")
 for x in entradas:
     x1, x2 = x
     #Calculo de neuronas
-    z = x1*w1 + x2*w1 + b
+    z = x1*w1 + x2*w2 + b
     salida = step(z)
     print(f"Entrada: {x} -> z={z:.1f}, salida={salida}")
 
