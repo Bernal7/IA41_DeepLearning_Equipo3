@@ -8,3 +8,15 @@
 #NEURONA SIMPLE SIN ENTRENAR (PESOS ELEGIDOS A MANO) QUE SIMULE COMPUERTA LOGICA AND
 #Datos de entrada (x1, x2) -> tabla de verdad NAND
 entradas = [[0,0], [0,1], [1,0], [1,1]]
+
+
+
+
+
+#Funcion de activacion
+def step(x):
+    """Funcion de activacion de escalon"""
+    if x<=0:
+        return 1
+    else:
+        return 0
