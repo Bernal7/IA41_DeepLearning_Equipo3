@@ -15,3 +15,11 @@ z = x @ W  # Equivalente a np.dot(x, W)
 #*np.dot()
 
 y_sigmoid = 1 / (1 + np.exp(-z)) # todo establecer funcion de activacion sigmoid
+
+#* Mostrar resultados
+print("Matriz de pesos (3x4):")
+print(W)
+print("\nEntrada:")
+print(x)
+print("\nSalida:")
+print(y_sigmoid)
