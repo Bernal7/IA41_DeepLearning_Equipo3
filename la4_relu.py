@@ -15,3 +15,12 @@ z = x @ W  # Equivalente a np.dot(x, W)
 #*np.dot()
 
 y_relu = np.maximum(0, z) # todo: establecer funcion de activacion relu
+
+#* Mostrar resultados
+print("Matriz de pesos (3x4):")
+print(W)
+print("\nEntrada:")
+print(x)
+print("\nSalida:")
+print(y_relu)
+
