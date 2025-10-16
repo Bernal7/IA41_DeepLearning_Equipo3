@@ -17,3 +17,24 @@ while op not in ['1', '2', '3']:
 inputs = np.array([1.0, 0.5, -1.0])
 weights = np.array([0.2, 0.5, 0.3])
 bias = 0.4
+
+# Calcula Suma ponderada (scalar)
+weighted_sum = np.dot(inputs, weights) + bias
+
+# Imprimir entradas, pesos y bias
+print()
+print("Entradas:", inputs)
+print("Pesos:", weights)
+print("Bias:", bias)
+print("Suma ponderada:", weighted_sum)
+print()
+
+# Selección de la función de activación y cálculo de la salida
+if op == '1':
+    #calcula la funcion tanh en la suma ponderada
+    y = np.tanh(weighted_sum)
+    out = inputs.copy()
+    np.tanh(inputs, out=out, where=True)
+    
+    lbl = "Tangente Hiperbolica"
+    
