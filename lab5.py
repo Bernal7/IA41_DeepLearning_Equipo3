@@ -58,3 +58,23 @@ else:
     
     lbl = "ReLU"
     
+    print("Resultado de ReLU: ", out)
+    print()
+    print("Resultado Funcion de Activacion (relu):", y)
+
+# Graficar la forma de la función de activación en un rango y marcar el punto calculado
+x = np.linspace(-5, 5, 100)
+if op == '1':
+    #calcula la curva en la funcion tanh
+    curve = np.tanh(x)
+elif op == '2':
+    # calcula la curva en la funcion sigmoid
+    curve = 1 / (1 + np.exp(-x))
+else:
+    # calcula la curva en la funcion relu
+    curve = np.maximum(0, x)
+
+# Dibuja la curva de la función de activación en el rango x
+plt.plot(x, curve, label=lbl)
+
+# Marca con un punto rojo (scatter) la posición de la suma ponderada y su salida
