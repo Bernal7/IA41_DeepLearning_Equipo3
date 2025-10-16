@@ -38,3 +38,23 @@ if op == '1':
     
     lbl = "Tangente Hiperbolica"
     
+    print("Resultado de Tangente Hiperbolica: ", out)
+    print()
+    print("Resultado Funcion de Activacion (tanh):", y)
+elif op == '2':
+    #calcula la funcion sigmoid en la suma ponderada
+    y = 1 / (1 + np.exp(-weighted_sum))
+    out = 1 / (1 + np.exp(-inputs))
+    
+    lbl = "Sigmoid"
+    
+    print("Resultado de Sigmoid: ", out)
+    print() 
+    print("Resultado Funcion de Activacion (sigmoid):", y)
+else:
+    #calcula la funcion relu en la suma ponderada
+    y = max(0, weighted_sum)
+    out = np.maximum(0, inputs)
+    
+    lbl = "ReLU"
+    
