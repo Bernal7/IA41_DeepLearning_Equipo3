@@ -78,3 +78,23 @@ else:
 plt.plot(x, curve, label=lbl)
 
 # Marca con un punto rojo (scatter) la posición de la suma ponderada y su salida
+# `zorder=5` asegura que el punto esté encima de la curva para ser visible
+plt.scatter([weighted_sum], [y], color='red', zorder=5, label=f'Point in {lbl} function')
+
+# Añade un título descriptivo a la gráfica indicando la función seleccionada
+plt.title(f"Funcion de Activacion: {lbl}")
+
+# Etiqueta el eje X
+plt.xlabel("Entrada")
+
+# Etiqueta el eje Y con el nombre de la función usada
+plt.ylabel(f"Salida {lbl}(x)")
+
+# Muestra la leyenda para identificar la curva y el punto
+plt.legend()
+
+# Activa la cuadrícula para facilitar la lectura visual de valores
+plt.grid(True)
+
+# Muestra la figura en pantalla (bloqueante dependiendo del backend)
+plt.show()
