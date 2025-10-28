@@ -41,3 +41,7 @@ b3 = np.random.rand(1, 3)  # ... ... ... ... ... tercera ... (salida)
 
 z1 = relu(np.dot(in_vectors, w1) + b1)  # Primera capa oculta con ReLU
 z2 = sigmoid(np.dot(z1, w2) + b2)        # Segunda ... ... ... Sigmoid
+output = tanh(np.dot(z2, w3) + b3)        # Tercera ... (salida) con Tanh
+
+print("Output de la red neuronal:")
+print(output)
