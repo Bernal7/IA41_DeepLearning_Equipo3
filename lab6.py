@@ -36,3 +36,8 @@ w2 = np.random.rand(3, 3)  # ... ... ... ... ... segunda ... ...
 w3 = np.random.rand(3, 3)  # ... ... ... ... ... tercera ... (salida)
 
 b1 = np.random.rand(1, 3)  # Bias para la primera capa oculta
+b2 = np.random.rand(1, 3)  # ... ... ... ... ... segunda ... ...
+b3 = np.random.rand(1, 3)  # ... ... ... ... ... tercera ... (salida)
+
+z1 = relu(np.dot(in_vectors, w1) + b1)  # Primera capa oculta con ReLU
+z2 = sigmoid(np.dot(z1, w2) + b2)        # Segunda ... ... ... Sigmoid
