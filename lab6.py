@@ -32,3 +32,7 @@ in_vectors = np.array([
 ])
 
 w1 = np.random.rand(3, 3)  # Matriz de pesos para la primera capa oculta
+w2 = np.random.rand(3, 3)  # ... ... ... ... ... segunda ... ...
+w3 = np.random.rand(3, 3)  # ... ... ... ... ... tercera ... (salida)
+
+b1 = np.random.rand(1, 3)  # Bias para la primera capa oculta
