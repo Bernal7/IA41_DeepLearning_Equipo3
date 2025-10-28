@@ -23,3 +23,12 @@ def sigmoid(x):
 
 def tanh(x):
     return np.tanh(x)
+
+# Vectores de entrada
+in_vectors = np.array([
+    [ 0.5, -1, -1.75 ], # Primer Vector de entradas
+    [ -1.0, 2.3, 0.25], # Segundo ... ... ...
+    [ -0.1, 0.45, 1.15] # Tercer ... ... ...
+])
+
+w1 = np.random.rand(3, 3)  # Matriz de pesos para la primera capa oculta
