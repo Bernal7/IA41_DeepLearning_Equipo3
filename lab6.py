@@ -31,17 +31,15 @@ in_vectors = np.array([
     [ -0.1, 0.45, 1.15] # Tercer ... ... ...
 ])
 
-w1 = np.random.rand(3, 3)  # Matriz de pesos para la primera capa oculta
-w2 = np.random.rand(3, 3)  # ... ... ... ... ... segunda ... ...
-w3 = np.random.rand(3, 3)  # ... ... ... ... ... tercera ... (salida)
+w = np.random.rand(3, 3)  # Matriz de pesos para la primera capa oculta
 
 b1 = np.random.rand(1, 3)  # Bias para la primera capa oculta
 b2 = np.random.rand(1, 3)  # ... ... ... ... ... segunda ... ...
 b3 = np.random.rand(1, 3)  # ... ... ... ... ... tercera ... (salida)
 
-z1 = relu(np.dot(in_vectors, w1) + b1)  # Primera capa oculta con ReLU
-z2 = sigmoid(np.dot(z1, w2) + b2)        # Segunda ... ... ... Sigmoid
-output = tanh(np.dot(z2, w3) + b3)        # Tercera ... (salida) con Tanh
+z1 = relu(np.dot(in_vectors, w) + b1)  # Primera capa oculta con ReLU
+z2 = sigmoid(np.dot(z1, w) + b2)        # Segunda ... ... ... Sigmoid
+output = tanh(np.dot(z2, w) + b3)        # Tercera ... (salida) con Tanh
 
 print("Output de la red neuronal:")
 print(output)
