@@ -51,3 +51,22 @@ b2 = tf.random.uniform((3,), minval=min_val, maxval=max_val, dtype=tf.float32)
 y_ws = tf.matmul(z, w2) + b2  # (2,3) * (3,3) = (2,3)
 
 # Aplicar función de activación según la opción
+match opt:
+    case 1:
+        Y = tf.nn.relu(y_ws)
+    case 2:
+        Y = tf.nn.sigmoid(y_ws)
+    case 3:
+        Y = tf.nn.tanh(y_ws)
+
+# Mostrar salida
+print("\nSalida Y:\n", Y)
+
+x_linspace = np.linspace(0, 10, 100)
+
+match opt:
+    case 1:
+        y_linspace = tf.nn.relu(x_linspace)
+        lbl="ReLU"
+    case 2:
+        y_linspace = tf.nn.sigmoid(x_linspace)
