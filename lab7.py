@@ -30,3 +30,24 @@ w1 = tf.random.uniform((3, 3), minval=min_val, maxval=max_val, dtype=tf.float32)
 b1 = tf.random.uniform((3,), minval=min_val, maxval=max_val, dtype=tf.float32)
 
 # Primera capa oculta
+
+# tf.matmul saca el producto punto
+z_ws = tf.matmul(X, w1) + b1  # (2,3) * (3,3) = (2,3)
+
+# Aplicar función de activación según la opción
+match opt:
+    case 1:
+        z = tf.nn.relu(z_ws)
+    case 2:
+        z = tf.nn.sigmoid(z_ws)
+    case 3:
+        z = tf.nn.tanh(z_ws)
+
+# Segunda capa (salida)
+w2 = tf.random.uniform((3, 3), minval=min_val, maxval=max_val, dtype=tf.float32)
+b2 = tf.random.uniform((3,), minval=min_val, maxval=max_val, dtype=tf.float32)
+
+# tf.matmul saca el producto punto
+y_ws = tf.matmul(z, w2) + b2  # (2,3) * (3,3) = (2,3)
+
+# Aplicar función de activación según la opción
