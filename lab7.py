@@ -70,3 +70,26 @@ match opt:
         lbl="ReLU"
     case 2:
         y_linspace = tf.nn.sigmoid(x_linspace)
+    case 3:
+        y_linspace = tf.nn.tanh(x_linspace)
+        lbl="Tanh"
+
+plt.plot(x_linspace, y_linspace, label=lbl)
+
+# Graficar puntos de Y (aplanados) usando índices como x
+# .numpy() → convierte el tensor a un array de NumPy.
+# .flatten() → convierte la matriz 2D (2,3) en un vector 1D:
+Y_points = Y.numpy().flatten()
+
+# len(Y_points) = número de elementos en este vector 1D (6 en este caso).
+# np.arange(n) → genera un array [0, 1, 2, ..., n-1]:
+x_indices = np.arange(len(Y_points))  # 0,1,2,... hasta 5 en este caso
+
+plt.scatter(x_indices, Y_points, color="red", zorder=10, label=f"points in {lbl} func")
+
+plt.title(f"{lbl} function")
+plt.xlabel("index of output")
+plt.ylabel(f"{lbl} output")
+plt.legend()
+plt.grid(True)
+plt.show()
