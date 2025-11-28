@@ -1,0 +1,11 @@
+#Combinacion pandas y skfuzzy
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import skfuzzy as fuzz
+
+#1 cargar los datos al pandas, crear un dataframe como si fuera un archivo CSV
+data = pd.DataFrame({
+    "Nombre: " ["Ana", "Luis", "Sofia", "Pedro", "Maria"],
+    "Edad: " [12, 25, 37, 50, 70]
+})
