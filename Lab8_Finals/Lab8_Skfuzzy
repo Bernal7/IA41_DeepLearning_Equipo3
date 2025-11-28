@@ -1,0 +1,3 @@
+#libreria skfuzzy
+import skfuzzy as fuzz
+import numpy as np
