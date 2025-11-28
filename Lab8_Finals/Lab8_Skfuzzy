@@ -1,3 +1,6 @@
 #libreria skfuzzy
 import skfuzzy as fuzz
 import numpy as np
+
+#1 se define el rango del universo (temperatura de 0 a 30)
+x_temp = np.arange(0, 31, 1)
