@@ -9,3 +9,15 @@ data = pd.DataFrame({
     "Nombre: " ["Ana", "Luis", "Sofia", "Pedro", "Maria"],
     "Edad: " [12, 25, 37, 50, 70]
 })
+
+print("Datos originales:\n", data)
+
+#2 normalizar las edades
+max_edad = np.max(data["Edad"])
+data["Edad_Normalizada"] = data["Edad"] / max_edad
+
+print("\nDatos con edad normalizada:\n", data)
+
+#3 crear un sistema difuso para clasificar las edades (uso de skfuzzy)
+#Universo de edades de 0 a 80
+x_edad = np.arange(0, 81, 1)
