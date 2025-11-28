@@ -1,0 +1,9 @@
+import random
+#Todo rear una solucion al azar (0--10)
+def crear_individuo():
+    return random.random(0, 10)
+
+
+#! calcular el fitness de un individuo
+def fitness(x):
+    return x # entre mas grande mejor
