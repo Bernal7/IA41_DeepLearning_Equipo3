@@ -19,3 +19,12 @@ def cruzar(p1, p2):
     return (p1 + p2) // 2
 
 #!Mutacion -- cambiar un individuo al azar
+def mutar(x):
+    if random.random() < 0.1: #probabilidad de mutacion
+        return random.randit(0, 10)
+    return x
+
+#Todo algortimo genetico
+def ga():
+    poblacion = [crear_individuo for _ in range(5)]
+    
