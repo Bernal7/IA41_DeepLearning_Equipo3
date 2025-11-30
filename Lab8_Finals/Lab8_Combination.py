@@ -34,3 +34,14 @@ pertenencia_mayor = []
 
 for e in data["Edad"]:
     pertenencia_joven.append(fuzz.interp_membership(x_edad, mu_joven, e))
+pertenencia_adulto.append(fuzz.interp_membership(x_edad, mu_adulto, e))
+    pertenencia_mayor.append(fuzz.interp_membership(x_edad, mu_mayor, e))
+
+data["mu_joven"] = pertenencia_joven
+data["mu_adulto"] = pertenencia_adulto
+data["mu_mayor"] = pertenencia_mayor
+
+print("\nPertenencias difusas calculadas:\n", data)
+
+#4 graficacion
+plt.figure(figsize=(10,5))
