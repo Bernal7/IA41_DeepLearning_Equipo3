@@ -14,3 +14,6 @@ print("Datos normalizados: ", data)
 
 #Graficar
 plt.plot(data["Nombre"], data["Edad"], label="Edad real", maker="o")
+plt.plot(data["Nombre"], data["Edad_Normalizada"] * max_edad, label="edad normalizada * max", maker="x")
+plt.title("Comparacion entre edad real y normalizada")
+plt.xlabel("Nombre")
