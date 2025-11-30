@@ -21,3 +21,16 @@ print("\nDatos con edad normalizada:\n", data)
 #3 crear un sistema difuso para clasificar las edades (uso de skfuzzy)
 #Universo de edades de 0 a 80
 x_edad = np.arange(0, 81, 1)
+
+#Funciones difusas triangulares
+mu_joven = fuzz.trimf(x_edad, [0, 0, 30])
+mu_adulto = fuzz.trimf(x_edad, [20, 40, 60])
+mu_mayor = fuzz.trimf(x_edad, [50, 80, 80])
+
+#Calcular pertenencia difusa de cada edad del dataframe
+pertenencia_joven = []
+pertenencia_adulto = []
+pertenencia_mayor = []
+
+for e in data["Edad"]:
+    pertenencia_joven.append(fuzz.interp_membership(x_edad, mu_joven, e))
