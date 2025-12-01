@@ -7,3 +7,6 @@ x_temp = np.arange(0, 31, 1)
 
 #2 se define la funcion de pertenencia triangular (x, [iniciom centro, final])
 mu_frio = fuzz.trimf(x_temp, [0, 0, 20])
+
+#3 evaluamos la pertenencia de algunos valores
+valores = [0, 5, 10, 15, 20]
