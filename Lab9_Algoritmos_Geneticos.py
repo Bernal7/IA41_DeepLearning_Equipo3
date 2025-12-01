@@ -28,3 +28,12 @@ def mutar(x):
 def ga():
     poblacion = [crear_individuo for _ in range(5)]
     
+for gen in range(10):
+        print(f"Generacion {gen}: {poblacion}")
+
+        nueva = []
+        for _ in range (len(poblacion)):
+            p1 = seleccion(poblacion)
+            p2 = seleccion(poblacion)
+            hijo = cruzar(p1, p2)
+            hijo = mutar(hijo)
